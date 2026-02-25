@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.cardapio.food.Food;
 import com.example.cardapio.food.FoodRequestDTO;
 import com.example.cardapio.food.FoodResponseDTO;
-import com.example.cardapio.food.FoodRespository;
+import com.example.cardapio.food.FoodRepository;
 
 @RestController
 @RequestMapping("food")
 public class FoodController {
 
     @Autowired
-    private FoodRespository repository;
+    private FoodRepository repository;
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping
